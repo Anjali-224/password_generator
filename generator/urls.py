@@ -20,9 +20,9 @@ from django.contrib import admin
 
 urlpatterns = [
  #   path('', admin.site.urls),
-     path('',views.home),     
-     path('eggs',views.eggs),
-     path('ani',views.ani),
+     path('',views.password),     
+     #path('eggs',views.eggs),
+     #path('ani',views.ani),
      path('pass',views.password,name = "main page"),
      path('generatedpassword',views.anspass,name="password"),
      path('about',views.about,name = 'about'),
