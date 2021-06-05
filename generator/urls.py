@@ -16,6 +16,7 @@ Including another URLconf
 #from django.contrib import admin
 from django.urls import path
 from genapp import views
+from django.contrib import admin
 
 urlpatterns = [
  #   path('', admin.site.urls),
@@ -24,5 +25,6 @@ urlpatterns = [
      path('ani',views.ani),
      path('pass',views.password,name = "main page"),
      path('generatedpassword',views.anspass,name="password"),
-     path('about',views.about,name = 'about')
+     path('about',views.about,name = 'about'),
+     path('admin/', admin.site.urls),
 ]
